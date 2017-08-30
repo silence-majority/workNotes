@@ -11,3 +11,9 @@
 * 命令
 
 > open .   打开当前的文件夹.
+
+* 允许Http请求
+
+> NSAppTransportSecurity
+
+![](ImageSource/allowHttp.png)
