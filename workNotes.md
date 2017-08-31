@@ -16,4 +16,14 @@
 
 > NSAppTransportSecurity
 
-![](ImageSource/allowHttp.png)
+>![](ImageSource/allowHttp.png)
+
+* ios文件系统  
+
+> * Documents  
+> * Library  
+     * Caches
+     * Prefre
+> * tmp
+
+>![](ImageSource/directoryHierarchy.png)
