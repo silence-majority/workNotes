@@ -55,8 +55,31 @@
   NSLibraryDirectory :   
   NSCachesDirectory  
   
-### 原生对象存储到本地(NSFileManager)
+### 原生对象存储到本地
+* writeToFile
+
+> This method recursively validates （递归验证）that all the contained objects are property list objects 
+(instances of NSData, NSDate, NSNumber, NSString, NSArray, or NSDictionary) before writing out the file,
+ and returns NO if all the objects are not property list objects, since the resultant file would not be a valid property list.
+ 
+ writeToFile会生成一个plist文件，所以那些不是property list objects不能直接调用writeToFile来写入文件。  
+ 例如装有10个字符串的数组可以直接调用writeToFile，但装有10个自定义person类的实例直接调用writeToFile会写入失败。
+ 
+ * dataWithContentsOfFile / dictionaryWithContentsOfFile / arrayWithContentsOfFile  
+ 
+> writeToFile的相反操作。从文件中读出相应的数据。
+
+* NSData  NSDictionary 互相转换
+
+> NSDictionary *obj = [NSJSONSerialization JSONObjectWithData:jsonData options:(NSJSONReadingMutableContainers) error:nil];   
+ 
+> NSData *data =    [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil]
+
+
 ### 自定义对象存储到本地（NSFileManager、NSKeyedArchiver）
+
+## yymodel
+## UIImagePickerController
   
   
   
