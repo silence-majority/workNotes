@@ -80,7 +80,8 @@
 
 ## yymodel
 ## UIImagePickerController
-  
+## UIViewController的生命周期
+## NSNull & nil的区别  
   
   
   
