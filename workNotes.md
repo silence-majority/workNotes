@@ -1,8 +1,20 @@
-## 零碎 -- 8/30
+## 零碎 
 * git 版本回退   
 
 > git log 获取版本号  
   git reset --hard 版本号
+ 
+* git分支
+
+> git branch 查看分支  
+  git branch -a  
+  git branch dev  创建一个dev分支  
+  git branch -d dev 删除dev分支  
+  git checkout dev  
+  git checkout -b dev  创建并切换到dev分支  
+  git pull origin dev  本地分支关联远程分支  
+  git checkout -b dev origin/dev 创建并切换到dev分支并且关联到远程dev  
+  git push origin dev 将本地分支推送到远程
  
 * merge冲突（pod）  
 
